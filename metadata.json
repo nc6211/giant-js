@@ -1,0 +1,6 @@
+{
+  "name": "Giant JS",
+  "description": "A production-ready JS and JSX editor with in-app React bundling, live preview, and console output.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

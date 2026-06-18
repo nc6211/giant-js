@@ -1,11 +1,24 @@
-<div align="center">
+# Giant JS
 
-<img width="1200" height="475" alt="GHBanner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
+A high-performance JavaScript and React IDE for mobile and web.
 
-  <h1>Built with AI Studio</h2>
+## Features
+- **Code Editor**: Clean, syntax-highlighted editor with line numbers.
+- **JS Runner**: Execute plain JavaScript and view console output instantly.
+- **React Runner**: Bundle and preview React (JSX) components using `esbuild-wasm`.
+- **File Management**: Create, save, and delete projects locally.
+- **Cross Platform**: Built for Expo (Mobile) and Web compatibility.
 
-  <p>The fastest path from prompt to production with Gemini.</p>
+## Tech Stack
+- **Framework**: Expo / React Native
+- **Bundler**: esbuild-wasm (In-browser/app bundling)
+- **Navigation**: React Navigation / State-based logic
+- **Styling**: Tailwind CSS / Nativewind
 
-  <a href="https://aistudio.google.com/apps">Start building</a>
+## Development
+1. Install dependencies: `npm install`
+2. Start for web: `npm run dev`
+3. Start for Expo: `npx expo start`
 
-</div>
+## License
+MIT
