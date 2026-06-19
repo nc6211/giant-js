@@ -1,15 +1,23 @@
 {
   "cli": {
-    "version": ">= 5.2.0",
-    "appVersionSource": "local"
+    "version": ">= 7.8.0"
   },
   "build": {
     "preview": {
-      "distribution": "internal",
       "android": {
-        "buildType": "apk"
+        "buildType": "apk",
+        "credentialsSource": "local",
+        "keystore": {
+          "keystorePath": "release.keystore",
+          "keystorePassword": "android123",
+          "keyAlias": "key0",
+          "keyPassword": "android123"
+        }
       },
-      "credentialsSource": "remote"
+      "env": {
+        "EXPO_PUBLIC_GOOGLE_CLIENT_ID": "677516988771-ugrle18vpco16rjg9l9mjr2ghbrfcd7k.apps.googleusercontent.com",
+        "EXPO_PUBLIC_GOOGLE_ANDROID_CLIENT_ID": "677516988771-ugrle18vpco16rjg9l9mjr2ghbrfcd7k.apps.googleusercontent.com"
+      }
     }
   }
 }
