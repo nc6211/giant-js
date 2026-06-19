@@ -1,5 +1,7 @@
 name: Build APK
 on:
+  push:
+    branches: [ main ]
   workflow_dispatch:
 
 jobs:
@@ -22,8 +24,10 @@ jobs:
           token: ${{ secrets.EXPO_TOKEN }}
           
       - name: Install dependencies
-        run: npm install
-        
+        run: |
+          npm config set legacy-peer-deps true
+          npm install --legacy-peer-deps
+          
       - name: Generate Keystore
         run: |
           keytool -genkeypair -v -keystore release.keystore -alias key0 -keyalg RSA -keysize 2048 -validity 10000 -storepass android123 -keypass android123 -dname "CN=Nitish KC, OU=dev, O=nitishkc, L=Lucknow, ST=UP, C=IN"
