@@ -3,10 +3,20 @@
     "version": ">= 7.8.0"
   },
   "build": {
+    "production": {
+      "android": {
+        "buildType": "apk",
+        "gradleCommand": ":app:assembleRelease"
+      },
+      "env": {
+        "EXPO_PUBLIC_GOOGLE_CLIENT_ID": "677516988771-ugrle18vpco16rjg9l9mjr2ghbrfcd7k.apps.googleusercontent.com",
+        "EXPO_PUBLIC_GOOGLE_ANDROID_CLIENT_ID": "677516988771-ugrle18vpco16rjg9l9mjr2ghbrfcd7k.apps.googleusercontent.com"
+      }
+    },
     "preview": {
       "android": {
         "buildType": "apk",
-        "credentialsSource": "local"
+        "gradleCommand": ":app:assembleRelease"
       },
       "env": {
         "EXPO_PUBLIC_GOOGLE_CLIENT_ID": "677516988771-ugrle18vpco16rjg9l9mjr2ghbrfcd7k.apps.googleusercontent.com",
