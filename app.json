@@ -1,40 +1,21 @@
 {
   "expo": {
-    "name": "Giant JS",
-    "slug": "github-giant-js",
-    "owner": "nitishkc7075s-team",
+    "name": "giant-js",
+    "slug": "giant-js",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "dark",
-    "newArchEnabled": true,
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#020617"
-    },
+    "userInterfaceStyle": "light",
+    "assetBundlePatterns": [
+      "**/*"
+    ],
     "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.nitishkc.giantjs"
+      "supportsTablet": true
     },
     "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#020617"
-      },
-      "package": "com.nitishkc.giantjs"
-    },
-    "web": {
-      "favicon": "./assets/favicon.png",
-      "bundler": "metro"
+      "package": "com.nitishkc7075.giantjs"
     },
     "plugins": [
       "expo-router"
-    ],
-    "extra": {
-      "eas": {
-        "projectId": "8a8337ba-43a2-4a59-b9cd-2fa0b744dcfc"
-      }
-    }
+    ]
   }
 }
