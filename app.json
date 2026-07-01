@@ -3,7 +3,7 @@
     "name": "giant-js",
     "slug": "github-giant-js",
     "owner": "nitishkc7075s-team",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "orientation": "portrait",
     "userInterfaceStyle": "light",
     "main": "expo-router/entry",
